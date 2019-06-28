@@ -1,0 +1,15 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            provider: keycloak
+            clientId: oidc-example
+            clientSecret: fe018be0-a8e8-4be8-a514-08befb9159f1
+            authorizationGrantType: authorization_code
+            scope: openid
+        provider:
+          keycloak:
+            issuerUri: https://kc.services.theosmo.com/auth/realms/VRM-DEV
+            user-name-attribute: name
